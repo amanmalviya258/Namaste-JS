@@ -33,4 +33,14 @@ return x.toString(2);
 const binaryArr3 = arr3.map((x) => x.toString(2));
 
 //So basically map function is mapping each and every value and transforming it based on given condition.
+const users = [
+    { firstName: "Alok", lastName: "Raj", age: 23 },
+    { firstName: "Ashish", lastName: "Kumar", age: 29 },
+    { firstName: "Ankit", lastName: "Roy", age: 29 },
+    { firstName: "Pranav", lastName: "Mukherjee", age: 50 },
+  ];
+  // Get array of full name : ["Alok Raj", "Ashish Kumar", ...]
+  const fullNameArr = users.map((user) => user.firstName + " " + user.lastName);
+  console.log(fullNameArr); // ["Alok Raj", "Ashish Kumar", ...]
+  
 
